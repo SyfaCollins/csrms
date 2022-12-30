@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,4 +28,16 @@ Route::get('/case', function () {
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::get('/case', function () {
+    return view('case');
+});
+
+Route::get('/police-stations', function () {
+    return view('police-stations');
+});
+
+Route::get('/reports', function () {
+    return view('reports');
 });

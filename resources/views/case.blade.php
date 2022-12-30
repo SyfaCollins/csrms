@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
 
-
-<body>
-    <h1>Case Page</h1>
-</body>
-</html>
+@extends('layouts.layout')
+@section('title','Dashboard')
+@section('content')
+  <h1 class="text-3xl font-bold underline">
+  Case
+  </h1>
+ <p>Case list</p>
+ 
+@endsection
