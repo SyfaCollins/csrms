@@ -34,10 +34,14 @@ Route::get('/case', function () {
     return view('case');
 });
 
-Route::get('/police-stations', function () {
-    return view('police-stations');
+Route::get('/policeStations', function () {
+    return view('policeStations');
 });
 
 Route::get('/reports', function () {
     return view('reports');
+});
+
+Route::get('/suspects', function () {
+    return view('suspects');
 });
