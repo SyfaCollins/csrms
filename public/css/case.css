@@ -1,0 +1,22 @@
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: red;
+}
+
+tr:hover {
+    background-color: #d6eeee;
+}
+
+.topBar {
+    display: flex;
+    gap: 0.5em;
+}
+
+button {
+    border: none;
+    padding: 1em;
+    pointer:cursor;
+}

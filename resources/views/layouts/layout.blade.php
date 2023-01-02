@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('css/case.css') }}" rel="stylesheet" type="text/css" >
     <title>@yield('title')</title>
 </head>
 <body>

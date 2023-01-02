@@ -30,8 +30,8 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/case', function () {
-    return view('case');
+Route::get('/officers', function () {
+    return view('officers');
 });
 
 Route::get('/policeStations', function () {
