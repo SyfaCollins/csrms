@@ -2,10 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: 180e56;
+    color: #180e56;
 }
-
-/* ca */
 
 .topNav {
     overflow: hidden;
@@ -33,6 +31,10 @@ main {
     color: white;
     position: fixed;
     z-index: 0;
+}
+
+.sideNav a {
+    color: #ffffff;
 }
 
 ul {

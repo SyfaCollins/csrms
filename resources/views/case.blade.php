@@ -7,7 +7,7 @@
   </h1>
  <div class="topBar">
 <button>Cases</button>
-<button>Add Case</button>
+<button> <a href="/caseadd">Add Case</a> </button>
  </div>
 
  <div class="listing">
@@ -15,7 +15,13 @@
     <tr>
       <th>case number</th>
       <th>Suspect name</th>
-      <th>Offended name</th>
+      <th>Date</th>
+      <th>Case Category</th>
+      <th>Avidence</th>
+      <th>Location</th>
+
+
+      
     </tr>
 
     <tr>

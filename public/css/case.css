@@ -1,9 +1,19 @@
+table{
+    border:"none";
+    border-collapse:collapse;
+    width:100%;
+}
+
 tr {
     border-bottom: 1px solid #ddd;
 }
 
 th {
-    color: red;
+    font-weight:semi-bold;
+    font-size:20px;
+    background-color:#B0F3F8;
+    padding:.5em;
+
 }
 
 tr:hover {
@@ -16,7 +26,22 @@ tr:hover {
 }
 
 button {
-    border: none;
+    /* border: none; */
     padding: 1em;
     pointer:cursor;
+    background-color:#B0F3F8;
+    border: 2px solid #B0F3F8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+a{
+    color:#180e56;
+
+}
+
+.addcase{
+    background-color:#B0F3F8;
+    padding:4em;
+
 }

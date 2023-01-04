@@ -45,3 +45,7 @@ Route::get('/reports', function () {
 Route::get('/suspects', function () {
     return view('suspects');
 });
+
+Route::get('/caseadd', function () {
+    return view('caseAdd');
+});
