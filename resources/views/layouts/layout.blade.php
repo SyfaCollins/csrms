@@ -20,13 +20,13 @@
         <main>
             <ul class="sideNav">
               <li>
-                <a href="/dashboard">Dashboard</a>
+                <a href="{{route('home.dashboard')}}">Dashboard</a>
                 </li>
-              <li><a href="/case">Case</a></li>
-              <li><a href="/suspects">Suspects</a></li>
-              <li><a href="/policeStations">police stations</a></li>
-              <li><a href="/officers">officers</a></li>
-              <li><a href="/reports">reports</a></li>
+              <li><a href="{{route('cases.index')}}">Case</a></li>
+              <li><a href="{{route('home.suspects')}}">Suspects</a></li>
+              <li><a href="{{route('home.index')}}">police stations</a></li>
+              <li><a href="">officers</a></li>
+              <li><a href="{{route('home.reports')}}">reports</a></li>
             </ul>
 
             <div class="content">

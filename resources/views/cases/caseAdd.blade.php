@@ -11,7 +11,7 @@
  </div>
 
  <div class="form-add">
-    <form class="addcase" action="" method="post">
+    <form class="addcase" action="{{route('cases.create')}}" method="post">
        <label for="Case Number">Case Number</label>
        <input type="text"><br><br>
        <label for="victim">victim</label>

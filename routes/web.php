@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CaseController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,34 +20,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
 
-Route::get('/case', function () {
-    return view('case');
-});
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/',[HomeController::class,'index'])->name('home.index');
+Route::get('/dashboard',[HomeController::class,'dashboard'])->name('home.dashboard');
+Route::get('/suspects',[HomeController::class,'suspects'])->name('home.suspects');
+Route::get('/reports',[HomeController::class,'reports'])->name('home.reports');
 
-Route::get('/officers', function () {
-    return view('officers');
-});
+Route::resource('cases' ,CaseController::class);
 
-Route::get('/policeStations', function () {
-    return view('policeStations');
-});
 
-Route::get('/reports', function () {
-    return view('reports');
-});
-
-Route::get('/suspects', function () {
-    return view('suspects');
-});
-
-Route::get('/caseadd', function () {
-    return view('caseAdd');
-});
