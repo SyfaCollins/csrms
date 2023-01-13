@@ -31,6 +31,8 @@ class CaseController extends Controller
     {
         //GET
         return view('cases.caseAdd');
+
+
     }
 
     /**
@@ -42,6 +44,19 @@ class CaseController extends Controller
     public function store(Request $request)
     {
         //
+        $cases= new Cases();
+
+        $cases->cas_refNo= $request->input('cas_refNo');
+        $cases->victim = $request->input('victim');
+        $cases->suspect= $request->input('suspect');
+        $cases->evidence= $request->input('evidence');
+        $cases->statement= $request->input('statement');
+        $cases->location= $request->input('location');
+        $cases->created_at= $request->input('date');
+
+        $cases->save();
+
+        return redirect()->route('cases.index');
     }
 
     /**
