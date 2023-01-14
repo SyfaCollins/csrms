@@ -23,7 +23,7 @@
                 <a href="{{route('home.dashboard')}}">Dashboard</a>
                 </li>
               <li><a href="{{route('cases.index')}}">Case</a></li>
-              <li><a href="{{route('home.suspects')}}">Suspects</a></li>
+              <li><a href="{{route('suspects.index')}}">Suspects</a></li>
               <li><a href="{{route('home.index')}}">police stations</a></li>
               <li><a href="">officers</a></li>
               <li><a href="{{route('home.reports')}}">reports</a></li>
