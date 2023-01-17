@@ -12,43 +12,42 @@
 <div class="suspects">
     <table>
         <tr>
+            <th>Suspect ID</th>
             <th>name</th>
-            <th>age</th>
-            <th>residence</th>
-            <th>Case no.</th>
-            <th>police station</th>
-            <th>cell no.</th>
+            <th>DOB</th>
+            <th>Residence</th>
+            <th>Statement</th>
+            <th>Police station</th>
+            <th>Belongings</th>
+            <th>Fired Date</th>
+
         </tr>
 
+        @foreach ($Suspects as $Suspect)
         <tr>
-            <td>Jerry</td>
-            <td>25</td>
+            <td>{{$Suspect['sup_id']}}</td>
+            <td>{{$Suspect['name']}}</td>
+            <td>{{$Suspect['DOB']}}</td>
+            <td>{{$Suspect['statement']}}</td>
+            <td>{{$Suspect['police_station']}}</td>
+            <td>{{$Suspect['belongings']}}</td>
+            <td>{{$Suspect['created_at']}}</td>
+
+
+
+
+
+            
             <td>Makindye</td>
             <td>#3846</td>
             <td>Jinja Road</td>
             <td>C04</td>
             <td>view more</td>
         </tr>
+        @endforeach
 
-        <tr>
-            <td>Jerry</td>
-            <td>25</td>
-            <td>Makindye</td>
-            <td>#3846</td>
-            <td>Jinja Road</td>
-            <td>C04</td>
-            <td>view more</td>
-        </tr>
 
-        <tr>
-            <td>Jerry</td>
-            <td>25</td>
-            <td>Makindye</td>
-            <td>#3846</td>
-            <td>Jinja Road</td>
-            <td>C04</td>
-            <td>view more</td>
-        </tr>
+        
     </table>
 </div>
 

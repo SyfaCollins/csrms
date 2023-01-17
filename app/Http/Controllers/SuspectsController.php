@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Suspect;
 
 class SuspectsController extends Controller
 {
@@ -14,7 +15,9 @@ class SuspectsController extends Controller
     public function index()
     {
         //
-        return view('suspects.suspects');
+        return view('suspects.suspects',[
+            'Suspects'=>Suspect::all()
+        ]);
 
     }
   
