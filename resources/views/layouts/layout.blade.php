@@ -12,10 +12,9 @@
 <body>
     <div class="layout">
         <nav class="topNav">
-            <h1 style="font: 500">LOGO</h1>
-            <button>
-                <a href="/login"></a>
-                Login</button>
+          {{-- <img src="/public/img/ugPolice.png" height="10px" width="10px" alt="ugPolice"> --}}
+          {{-- {{ HTML::image('img/ugPolice.png', 'a picture') }} --}}
+          <img src="{{ URL::to('/public/img/ugPolice.png') }}">
         </nav>
         <main>
             <ul class="sideNav">
@@ -24,8 +23,6 @@
                 </li>
               <li><a href="{{route('cases.index')}}">Case</a></li>
               <li><a href="{{route('suspects.index')}}">Suspects</a></li>
-              <li><a href="{{route('home.index')}}">police stations</a></li>
-              <li><a href="">officers</a></li>
               <li><a href="{{route('home.reports')}}">reports</a></li>
             </ul>
 

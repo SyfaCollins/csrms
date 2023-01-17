@@ -9,8 +9,12 @@
     <input type="text" placeholder="search name..."> <button type="submit">GO</button>
 </div>
 
+<div>
+    <button><a href="{{route('suspects.create')}}">Add Suspect</a></button>
+</div>
+
 <div class="suspects">
-    <table>
+    <table class="table">
         <tr>
             <th>Suspect ID</th>
             <th>name</th>
@@ -28,6 +32,7 @@
             <td>{{$Suspect['sup_id']}}</td>
             <td>{{$Suspect['name']}}</td>
             <td>{{$Suspect['DOB']}}</td>
+            <td>{{$Suspect['residence']}}</td>
             <td>{{$Suspect['statement']}}</td>
             <td>{{$Suspect['police_station']}}</td>
             <td>{{$Suspect['belongings']}}</td>

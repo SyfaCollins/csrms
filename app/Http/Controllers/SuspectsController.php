@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use App\Models\Suspect;
 
 class SuspectsController extends Controller
@@ -28,7 +29,8 @@ class SuspectsController extends Controller
      */
     public function create()
     {
-        //
+        //GET add suspects
+        return view('suspects.suspectsAdd');
     }
 
     /**
@@ -39,7 +41,34 @@ class SuspectsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //POST
+
+        $request->validate(
+            [
+                'name'=>'required',
+                'DOB'=>'required',
+                'residence'=>'required',
+                'police_station'=>'required',
+                'police_station'=>'required',
+                
+                ]
+            );
+
+        $suspects= new Suspect();
+
+        $suspects->sup_id= $request->input('sup_id');
+        $suspects->name = $request->input('name');
+        $suspects->DOB= $request->input('DOB');
+        $suspects->residence= $request->input('residence');
+        $suspects->statement= $request->input('statement');
+        $suspects->police_station= $request->input('police_station');
+        $suspects->belongings= $request->input('belongings');
+
+        $suspects->created_at= $request->input('created_at');
+
+        $suspects->save();
+
+        return redirect()->route('suspects.index');
     }
 
     /**

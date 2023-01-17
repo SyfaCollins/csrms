@@ -2,6 +2,7 @@ table{
     border:"none";
     border-collapse:collapse;
     width:100%;
+    font-size:13px;
 }
 
 tr {
