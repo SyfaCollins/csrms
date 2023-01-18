@@ -4,7 +4,7 @@
 @section('content')
 <h1>Dashboard</h1>  
 
-<div class="container">
+<div class="dashboard">
     <div class=" item item1">
         Total Cases
     </div>

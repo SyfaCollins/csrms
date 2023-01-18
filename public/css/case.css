@@ -3,7 +3,11 @@ table{
     border-collapse:collapse;
     width:100%;
     font-size:13px;
+      overflow-y:scroll;
+    height:20rem;
+    display:block;
 }
+
 
 tr {
     border-bottom: 1px solid #ddd;

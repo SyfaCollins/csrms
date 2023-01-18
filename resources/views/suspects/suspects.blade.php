@@ -20,7 +20,7 @@
             <th>name</th>
             <th>DOB</th>
             <th>Residence</th>
-            <th>Statement</th>
+            {{-- <th>Statement</th> --}}
             <th>Police station</th>
             <th>Belongings</th>
             <th>Fired Date</th>
@@ -33,21 +33,11 @@
             <td>{{$Suspect['name']}}</td>
             <td>{{$Suspect['DOB']}}</td>
             <td>{{$Suspect['residence']}}</td>
-            <td>{{$Suspect['statement']}}</td>
+            {{-- <td>{{$Suspect['statement']}}</td> --}}
             <td>{{$Suspect['police_station']}}</td>
             <td>{{$Suspect['belongings']}}</td>
             <td>{{$Suspect['created_at']}}</td>
 
-
-
-
-
-            
-            <td>Makindye</td>
-            <td>#3846</td>
-            <td>Jinja Road</td>
-            <td>C04</td>
-            <td>view more</td>
         </tr>
         @endforeach
 

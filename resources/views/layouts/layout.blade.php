@@ -12,9 +12,8 @@
 <body>
     <div class="layout">
         <nav class="topNav">
-          {{-- <img src="/public/img/ugPolice.png" height="10px" width="10px" alt="ugPolice"> --}}
-          {{-- {{ HTML::image('img/ugPolice.png', 'a picture') }} --}}
-          <img src="{{ URL::to('/public/img/ugPolice.png') }}">
+          <img src="/img/ugPolice.png" height="80px" width="80px" alt="ugPolice">
+          <h2>CSRMS</h2>        
         </nav>
         <main>
             <ul class="sideNav">
