@@ -18,12 +18,6 @@ use App\Http\Controllers\SuspectsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 Route::get('/dashboard',[HomeController::class,'dashboard'])->name('home.dashboard');
 Route::get('/suspects',[HomeController::class,'suspects'])->name('home.suspects');
@@ -34,7 +28,5 @@ Route::resource('suspects' ,SuspectsController::class);
 
 
 
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
