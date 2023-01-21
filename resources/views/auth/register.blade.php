@@ -23,15 +23,17 @@
           Register Here
           </h1>
          <div>
-          <input type="text" placeholder="Enter name" name="name" value="">
+          <input type="text" placeholder="Enter name" name="name" value="{{old('name')}}">
          </div>
          <div>
-         <input type="email" placeholder="Enter email" name="name" value="">
+         <input type="email" placeholder="Enter email" name="email" value="{{old('email')}}">
         </div>
         <div>
-        <input type="password" placeholder="enter password" name="name" value="">
+        <input type="password" placeholder="enter password" name="password">
           </div>
-
+          <div>
+            <input type="password" placeholder="Confirm password" name="password" >
+              </div>
             <button type="submit" class="register">Register</button>
           </div>
         </form>

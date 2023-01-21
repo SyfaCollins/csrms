@@ -28,7 +28,7 @@ Route::get('/suspects',[HomeController::class,'suspects'])->name('home.suspects'
 Route::get('/reports',[HomeController::class,'reports'])->name('home.reports');
 
 Route::resource('cases' ,CaseController::class);
-Route::resource('register' ,RegisteredUserController::class);
+Route::get('/register' ,[RegisteredUserController::class,'index']);
 Route::post('/register' ,[RegisteredUserController::class, 'store']);
 
 Route::resource('suspects' ,SuspectsController::class);
