@@ -11,6 +11,7 @@
  </div>
 
  <div class="listing">
+
   <table>
     <tr>
       <th>case_Ref No</th>
@@ -38,5 +39,6 @@
 @endforeach
 
   </table>
+
  </div>
 @endsection

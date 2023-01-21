@@ -17,7 +17,10 @@
 
     <div class="form">
 
-      <form action="action_page.php" method="post">
+      <form action="{{route('login')}}" method="post">
+
+        @csrf
+
           <h1>
           Login Here
           </h1>

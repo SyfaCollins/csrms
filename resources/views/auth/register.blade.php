@@ -17,7 +17,7 @@
 
     <div class="form">
 
-      <form action="/register" method="post">
+      <form action="{{route('register.store')}}" method="post">
         @csrf
           <h1>
           Register Here
