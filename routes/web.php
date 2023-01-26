@@ -27,14 +27,16 @@ Route::get('/',[HomeController::class,'index'])->name('home.index');
 Route::get('/dashboard',[DashboardController::class,'index'])->name('home.dashboard');
 Route::get('/suspects',[HomeController::class,'suspects'])->name('home.suspects');
 Route::get('/reports',[HomeController::class,'reports'])->name('home.reports');
-Route::post('/login',[LoginController::class,'login'])->name('login');
+Route::get('/login',[LoginController::class,'login'])->name('login');
+
+Route::post('/login',[LoginController::class,'access'])->name('login');
 
 
 Route::resource('cases' ,CaseController::class);
 
 
 Route::get('/register' ,[RegisterController::class,'index'])->name('register');
-Route::post('/register' ,[RegisterController::class, 'store'])->name('register.store');
+Route::post('/register' ,[RegisterController::class, 'store']);
 
 Route::resource('suspects' ,SuspectsController::class);
 

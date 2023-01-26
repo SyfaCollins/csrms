@@ -17,26 +17,48 @@
 
     <div class="form">
 
-      <form action="{{route('register.store')}}" method="post">
+      <form action="{{route('register')}}" method="POST">
+        <h1>Register Here</h1>
         @csrf
-          <h1>
-          Register Here
-          </h1>
-         <div>
-          <input type="text" placeholder="Enter name" name="name" value="{{old('name')}}">
-         </div>
-         <div>
-         <input type="email" placeholder="Enter email" name="email" value="{{old('email')}}">
-        </div>
+        <input type="text" name="name" placeholder="enter name" value={{old('name')}}><br>
         <div>
-        <input type="password" placeholder="enter password" name="password">
-          </div>
-          <div>
-            <input type="password" placeholder="Confirm password" name="password" >
-              </div>
-            <button type="submit" class="register">Register</button>
-          </div>
-        </form>
+            @error('name')
+                {{$message}}
+            @enderror
+        </div>
+        <br><br>
+        <input type="text" name="username" placeholder="enter username" value={{old('username')}}><br>
+        <div>
+            @error('username')
+                {{$message}}
+            @enderror
+        </div>
+        <br><br>
+        <input type="email" name="email" placeholder="enter email" value={{old('email')}}><br>
+        <div>
+            @error('email')
+                {{$message}}
+            @enderror
+        </div>
+        <br><br>
+        <input type="password" name="password" placeholder="enter password"><br>
+        <div>
+            @error('password')
+                {{$message}}
+            @enderror
+        </div>
+        <br><br>
+        <input type="password" name="password_confirmation" placeholder="Confirm password"><br>
+        <div>
+            @error('password_confirmation')
+                {{$message}}
+            @enderror
+        </div>
+        <br><br>
+<input type="submit" value="submit">
+
+
+    </form>
     </div>
 
   </main>

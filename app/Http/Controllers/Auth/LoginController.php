@@ -9,6 +9,13 @@ class LoginController extends Controller
 {
     //
     public function login(){
-        return view('dashboard');
+        return view('auth.login');
+    }
+
+    public function access(){
+
+        //validate data
+        //sanitize data
+        return redirect()->route('home.dashboard');
     }
 }
