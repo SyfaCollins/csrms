@@ -45,17 +45,7 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        // $user = new User();
 
-        // $user->name= $request->input('name');
-        // $user->email = $request->input('email');
-        // $user->password= Hash::make($request->input('password'));
- 
-
-        // return dd($user);
-        // event(new Registered($user));
-
-        // Auth::login($user);
 
         return redirect()->route('home.dashboard');
     }

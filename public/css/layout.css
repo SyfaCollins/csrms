@@ -17,6 +17,7 @@
     height:5em;
     display:flex;
     align-items:center;
+    justify-content:space-between;
 }
 
 
@@ -57,4 +58,15 @@ a {
     padding: 5rem;
     margin-left: 15rem;
     /* background-color:blue; */
+}
+
+
+.logout{
+    border:none;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+
 }

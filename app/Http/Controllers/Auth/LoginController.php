@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class LoginController extends Controller
 {
@@ -12,10 +13,24 @@ class LoginController extends Controller
         return view('auth.login');
     }
 
-    public function access(){
+    public function access(Request $request){
 
         //validate data
-        //sanitize data
-        return redirect()->route('home.dashboard');
+        //sanitize data 
+        $this->validate($request,
+    [
+        'email'=>'required|email',
+        'password'=>'required'
+    ]);
+
+    if(!auth()->attempt($request->only('email','password'))){
+        return back()->with('status', 'Invalid login details');
+    };
+        
+
+
+        return redirect()->route('home.dashboard',[
+            'users'=>User::all(),
+        ]);
     }
 }

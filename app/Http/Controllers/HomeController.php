@@ -8,9 +8,10 @@ class HomeController extends Controller
 {
     //
 
-    // public function index(){
-    //     return view('auth.login');
-    // }
+    public function index(){
+        return view('layouts.layout
+        ');
+    }
 
     public function dashboard(){
         return view('dashboard');

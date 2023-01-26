@@ -12,8 +12,16 @@
 <body>
     <div class="layout">
         <nav class="topNav">
-          <img src="/img/ugPolice.png" height="80px" width="80px" alt="ugPolice">
-          <h2>CSRMS</h2>        
+
+          <div class="logo">
+            <img src="/img/ugPolice.png" height="80px" width="80px" alt="ugPolice">
+            <h2>CSRMS</h2>
+          </div>
+
+          <div>
+            <h4>{{$users->name}}</h4>
+            <button class="logout"><a href="{{route('logout')}}">logout</a></button>
+          </div>
         </nav>
         <main>
             <ul class="sideNav">

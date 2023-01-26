@@ -17,18 +17,24 @@
 
     <div class="form">
 
-      <form action="{{route('login')}}" method="post">
+      <form action="{{route('login')}}" method="POST">
 
         @csrf
 
           <h1>
           Login Here
           </h1>
+
+          <div>
+            @if (session('status'))
+                {{session('status')}}
+            @endif
+          </div>
         
           <div class="bg-red">
-            <input type="text" placeholder="Enter Username" name="uname" required><br><br>
-            <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-            <button type="submit" class="loginbtn">Login</button>
+            <input type="email" placeholder="Enter email" name="email" required><br><br>
+            <input type="password" placeholder="Enter Password" name="password" required><br><br>
+            <input type="submit" class="loginbtn" value="login">
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
