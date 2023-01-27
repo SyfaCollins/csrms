@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #180e56;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .topNav {
@@ -69,4 +70,14 @@ a {
     display:flex;
     align-items:center;
 
+}
+
+h2{
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+ul li:hover{
+    background-color: #8e88b857;
 }

@@ -1,12 +1,21 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #180e56;
+    text-decoration: none;
+    /* width: min-content; */
+
+}
+
 .topNav {
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     height: 20%;
     z-index: 1;
     padding:1rem;
     height:5em;
     display:flex;
     align-items:center;
+    justify-content: space-between;
 }
 
 .form{
@@ -19,7 +28,8 @@
 }
 
 form{
-    border:1px solid black;
+    border:none;
+    box-shadow: 1px 1px 5px blueviolet;
     padding:2rem 4rem;
 }
 
@@ -32,15 +42,21 @@ padding:.5rem;
 }
 
 .loginbtn{
-    color:#ffffff;
-    background-color: blue
+    /* color:#ffffff; */
+    /* background-color: blue; */
+    /* fon */
 }
 
 .cancelbtn{
-    color:#ffffff;
-    background-color:red;
+    /* color:#ffffff;
+    background-color:red; */
 }
 
 button{
     border:none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
 }

@@ -6,13 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="{{ asset('css/login.css') }}" rel="stylesheet" type="text/css" >
+  <!-- <link href="{{ asset('css/layout.css') }}" rel="stylesheet" type="text/css" > -->
 
 </head>
 <body>
   <main>
     <nav class="topNav">
+      <div class="logo">
       <img src="/img/ugPolice.png" height="80px" width="80px" alt="ugPolice">
-      <h2>CSRMS</h2>        
+      <h2>CSRMS</h2>
+      </div>
+     
+      
+      <div>
+        <button><a  href="{{route('register')}}">Register</a> </button>
+      </div>
     </nav>
 
     <div class="form">

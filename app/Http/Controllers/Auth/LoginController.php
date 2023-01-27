@@ -29,8 +29,6 @@ class LoginController extends Controller
         
 
 
-        return redirect()->route('home.dashboard',[
-            'users'=>User::all(),
-        ]);
+        return redirect()->route('home.dashboard');
     }
 }

@@ -19,7 +19,6 @@
           </div>
 
           <div>
-            <h4>{{$users->name}}</h4>
             <button class="logout"><a href="{{route('logout')}}">logout</a></button>
           </div>
         </nav>

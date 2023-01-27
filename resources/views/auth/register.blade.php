@@ -26,35 +26,35 @@
                 {{$message}}
             @enderror
         </div>
-        <br><br>
+        
         <input type="text" name="username" placeholder="enter username" value={{old('username')}}><br>
         <div>
             @error('username')
                 {{$message}}
             @enderror
         </div>
-        <br><br>
+        
         <input type="email" name="email" placeholder="enter email" value={{old('email')}}><br>
         <div>
             @error('email')
                 {{$message}}
             @enderror
         </div>
-        <br><br>
+        
         <input type="password" name="password" placeholder="enter password"><br>
         <div>
             @error('password')
                 {{$message}}
             @enderror
         </div>
-        <br><br>
+        
         <input type="password" name="password_confirmation" placeholder="Confirm password"><br>
         <div>
             @error('password_confirmation')
                 {{$message}}
             @enderror
         </div>
-        <br><br>
+        
 <input type="submit" value="submit">
 
 

@@ -7,7 +7,7 @@
 <div class="dashboard">
     <div class=" item item1">
        <p>Total Cases</p> 
-       <div>
+       <div class="data">
         {{ $cases->count()}}
          </div>
     </div>
@@ -16,7 +16,7 @@
     </div>
     <div class=" item item3">
         <p>Total Suspects</p>
-        <div>
+        <div class="data">
             {{$suspects->count()}}
         </div>
     </div>
